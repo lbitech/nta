@@ -8,7 +8,7 @@
 <?php print_r($_GET); ?>
     <?php echo 'Value returned = ' . $_GET["multi-first-name"]; ?><br>
 <?php echo 'Web page = ' . $_SERVER["PHP_SELF"]; ?><br>
-    <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" >
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" >
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 <?php echo "Hello NTA"; ?></legend><br><br><br>
             <div class="pure-g" style="padding-bottom: 60px;">
