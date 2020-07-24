@@ -5,9 +5,6 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-<?php print_r($_GET); ?>
-    <?php echo 'Value returned = ' . $_GET["comment_data"]; ?><br>
-<?php echo 'Web page = ' . $_SERVER["PHP_SELF"]; ?><br>
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" >
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 <?php echo "Hello NTA"; ?></legend><br><br><br>
