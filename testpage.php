@@ -14,7 +14,7 @@
             <div class="pure-g" style="padding-bottom: 60px;">
                 <div class="pure-u-1 pure-u-md-1-3">
                     <label for="multi-first-name">This is an example question</label><br>
-                    <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/></textarea><br><br>
+                    <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/><?php echo $_GET["comment_data"]; ?></textarea><br><br>
                 </div>
                         <br><br>
             <button type="submit" class="pure-button pure-button-primary">Save</button>
