@@ -5,8 +5,9 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-    <iframe name="content" style="">
-   
+    <iframe name="content" style="display:none;">
+    </iframe>
+    
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" target="content">
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 </legend><br><br><br>
@@ -20,7 +21,6 @@
         </fieldset>
     </form>
 
-    </iframe>
 </body>
 <footer>
 </footer>
