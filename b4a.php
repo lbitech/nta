@@ -36,6 +36,9 @@ switch (true) {
     case count($results) == 1:
         echo '<br><br> Record exists.';
 
+        $targetObj = $results[0]->getObjectId();
+        echo '<br><br> Target objectId = ' . $targetObj . '<br><br>';
+
         $query = new ParseQuery("UpdateCount");
         try {
         $myCustomObject = $query->get("AOICOD7sGK");
