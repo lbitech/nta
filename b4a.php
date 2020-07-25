@@ -11,7 +11,7 @@ ParseClient::setServerURL('https://parseapi.back4app.com', '/');
 
 use Parse\ParseQuery;
 
-if (!empty($_GET["mail"])) {
+if (!empty($_GET["b4a"])) {
 $query = new ParseQuery("Activity");
 $query->equalTo("cid", $_GET["cid"]);
 $query->equalTo("aid", $_GET["aid"]);
@@ -24,7 +24,7 @@ echo 'Content = ' . $result->get("con") . '<br>';
 }
         
 } else {  
-    echo "No, mail is not set";
+    echo "No, DB interaction not set";
 }
 
 switch (true) {
