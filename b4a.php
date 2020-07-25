@@ -39,28 +39,17 @@ switch (true) {
         $targetObj = $results[0]->getObjectId();
         echo '<br><br> Target objectId = ' . $targetObj . '<br><br>';
 
+        $targetObj = $query->get($targetObj);
+
         $query = new ParseQuery("Activity");
         try {
-        $myActivityObject = $query->get($targetObj);
+        $activityCon = $query->get($targetObj);
         // The object was retrieved successfully.
-
-        // Update any data you want with the "set" method,
-        // providing the attribute name and the new value
-        /*
-        $val = $myCustomObject->get("Updates");
-        $val = $val + 1;
-        $myCustomObject->set("Updates", $val);
-        */
-        $con = $_GET["comment_data"];
-        //echo 'Comment data = ' . $con . '<br><br>  myActivityObject = ' . $myActivityObject . '<br><br>';
-
-        //$myActitivyObject->set("con", "Bollocks!");
-
-        // And then save your changes
-        $myActivityObject->save();
+        echo 'Get rec success <br><b>';
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.
+        echo 'Get rec fail <br><b>';
         }
 
         break;
