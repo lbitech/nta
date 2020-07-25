@@ -17,5 +17,6 @@ if (isset($_GET["action"])) {
     echo 'Object found ' . $result->getObjectId() . '<br>';
     }
 }
+echo 'Stuff';
 
 ?>
