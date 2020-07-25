@@ -51,6 +51,7 @@ switch (true) {
         $val = $val + 1;
         $myCustomObject->set("Updates", $val);
         */
+        echo 'Comment data = ' . $_GET["comment_data"] . '<br><br>';
         $myActitivyObject->set("con", $_GET["comment_data"]);
 
 
