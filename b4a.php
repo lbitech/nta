@@ -51,10 +51,10 @@ switch (true) {
         $val = $val + 1;
         $myCustomObject->set("Updates", $val);
         */
-        $con = $_GET["comment_data"];
+        $con = $_GET["commentData"];
         echo 'Comment data = ' . $con . '<br><br>';
        // $myActitivyObject->set("con", $_GET["comment_data"]);
-        $myActitivyObject->set("con", $con);
+        $myActitivyObject->set("con",$con);
 
         // And then save your changes
         $myActivityObject->save();
