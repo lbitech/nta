@@ -27,6 +27,22 @@ echo 'Content = ' . $result->get("con") . '<br>';
     echo "No, mail is not set";
 }
 
+switch (true) {
+    case count($results) <= 0:
+        echo '<br><br> New record required.';
+        break;
+
+    case count($results) == 1:
+        echo '<br><br> Record exists.';
+        break;
+
+    case count($results) > 1:
+        echo '<br><br> Error! greater than 1 record.';
+        break;
+}
+
+
+
 echo 'Stuff';
 
 ?>
