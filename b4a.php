@@ -17,13 +17,13 @@ $results = $query->find();
 foreach($results as $result) {
 echo 'Object found ' . $result->getObjectId() . '<br>';
 }
-/*
-if (!empty($_POST["mail"])) {
+
+if (!empty($_GET["mail"])) {
     echo "Yes, mail is set";    
 } else {  
     echo "No, mail is not set";
 }
-*/
+
 echo 'Stuff';
 
 ?>
