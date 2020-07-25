@@ -43,7 +43,7 @@ switch (true) {
 
         // Update any data you want with the "set" method,
         // providing the attribute name and the new value
-        $val = $myCustomObject->set("Updates");
+        $val = $myCustomObject->get("Updates");
         $val = $val + 1;
         $myCustomObject->set("Updates", $val);
 
