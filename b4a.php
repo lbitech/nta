@@ -52,11 +52,11 @@ switch (true) {
         $myCustomObject->set("Updates", $val);
         */
         echo 'Comment data = ' . $_GET["comment_data"] . '<br><br>';
-        $myActitivyObject->set("con", $_GET["comment_data"]);
+       // $myActitivyObject->set("con", $_GET["comment_data"]);
 
 
         // And then save your changes
-        $myActivityObject->save();
+        // $myActivityObject->save();
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.
