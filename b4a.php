@@ -44,6 +44,8 @@ switch (true) {
         $activityCon = $query->get($targetObj);
         // The object was retrieved successfully.
         echo 'Get rec success <br><b>';
+        $activityCon->set("con", $_GET["comment_data"]);
+        $activityCon->save();
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.
