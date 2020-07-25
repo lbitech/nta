@@ -1,6 +1,6 @@
 <?php
 
-require '../parse-php-sdk/autoload.php';
+require $_SERVER["PHP_SELF"] . '/parse-php-sdk/autoload.php';
 
 use Parse\ParseClient;
 
