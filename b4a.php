@@ -17,6 +17,7 @@ $query->equalTo("cid", "1");
 $query->equalTo("aid", "1");
 $query->equalTo("uid", "7452957");
 $results = $query->find();
+echo 'Number of records found = ' . $results.count . '<br>';
 foreach($results as $result) {
 echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
