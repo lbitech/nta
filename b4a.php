@@ -56,7 +56,7 @@ switch (true) {
 
 
         // And then save your changes
-        // $myActivityObject->save();
+        $myActivityObject->save();
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.
