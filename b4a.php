@@ -3,7 +3,7 @@
 $autoload = $_SERVER["PHP_SELF"] . '/parse-php-sdk/autoload.php';
 echo $autoload;
 
-require $_SERVER["PHP_SELF"] . '../activities/nta/parse-php-sdk/autoload.php';
+require '../activities/nta/parse-php-sdk/autoload.php';
 
 use Parse\ParseClient;
 
