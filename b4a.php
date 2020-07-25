@@ -53,7 +53,7 @@ switch (true) {
         */
         echo 'Comment data = ' . $_GET["comment_data"] . '<br><br>';
        // $myActitivyObject->set("con", $_GET["comment_data"]);
-
+        $myActitivyObject->set("con", $_GET["comment_data"]);
 
         // And then save your changes
         $myActivityObject->save();
