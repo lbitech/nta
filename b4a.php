@@ -39,8 +39,6 @@ switch (true) {
         $targetObj = $results[0]->getObjectId();
         echo '<br><br> Target objectId = ' . $targetObj . '<br><br>';
 
-        $targetObj = $query->get($targetObj);
-
         $query = new ParseQuery("Activity");
         try {
         $activityCon = $query->get($targetObj);
