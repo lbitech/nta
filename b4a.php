@@ -19,7 +19,14 @@ echo 'Object found ' . $result->getObjectId() . '<br>';
 }
 
 if (!empty($_GET["mail"])) {
-    echo "Yes, mail is set";    
+
+use Parse\ParseQuery;
+$query = new ParseQuery("Activity");
+$results = $query->find();
+foreach($results as $result) {
+echo 'Object found ' . $result->getObjectId() . '<br>';
+}
+        
 } else {  
     echo "No, mail is not set";
 }
