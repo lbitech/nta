@@ -11,19 +11,19 @@ ParseClient::setServerURL('https://parseapi.back4app.com', '/');
 
 
 
-    use Parse\ParseQuery;
-    $query = new ParseQuery("Activity");
-    $results = $query->find();
-    foreach($results as $result) {
-    echo 'Object found ' . $result->getObjectId() . '<br>';
-    }
-
-    if (!empty($_POST["mail"])) {
-        echo "Yes, mail is set";    
-    } else {  
-        echo "No, mail is not set";
-    }
-
+use Parse\ParseQuery;
+$query = new ParseQuery("Activity");
+$results = $query->find();
+foreach($results as $result) {
+echo 'Object found ' . $result->getObjectId() . '<br>';
+}
+/*
+if (!empty($_POST["mail"])) {
+    echo "Yes, mail is set";    
+} else {  
+    echo "No, mail is not set";
+}
+*/
 echo 'Stuff';
 
 ?>
