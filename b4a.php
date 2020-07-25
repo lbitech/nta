@@ -52,7 +52,7 @@ switch (true) {
         $myCustomObject->set("Updates", $val);
         */
         $con = $_GET["comment_data"];
-        echo 'Comment data = ' . $con . '<br><br> myActivityObject = ' . $myActivityObject . '<br><br>';
+        echo 'Comment data = ' . $con . '<br><br>  myActivityObject = ' . $myActivityObject . '<br><br>';
 
         //$myActitivyObject->set("con", "Bollocks!");
 
