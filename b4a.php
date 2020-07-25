@@ -39,19 +39,23 @@ switch (true) {
         $targetObj = $results[0]->getObjectId();
         echo '<br><br> Target objectId = ' . $targetObj . '<br><br>';
 
-        $query = new ParseQuery("UpdateCount");
+        $query = new ParseQuery("Activity");
         try {
-        $myCustomObject = $query->get("AOICOD7sGK");
+        $myActivityObject = $query->get($targetObj);
         // The object was retrieved successfully.
 
         // Update any data you want with the "set" method,
         // providing the attribute name and the new value
+        /*
         $val = $myCustomObject->get("Updates");
         $val = $val + 1;
         $myCustomObject->set("Updates", $val);
+        */
+        $myActitivyObject->set("con", $_GET["comment_data"]);
+
 
         // And then save your changes
-        $myCustomObject->save();
+        $myActivityObject->save();
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.
