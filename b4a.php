@@ -13,9 +13,9 @@ use Parse\ParseQuery;
 
 if (!empty($_GET["mail"])) {
 $query = new ParseQuery("Activity");
-$query->equalTo("cid", "1");
-$query->equalTo("aid", "1");
-$query->equalTo("uid", "7452957");
+$query->equalTo("cid", $_GET["cid"]);
+$query->equalTo("aid", $_GET["aid"]);
+$query->equalTo("uid", $_GET["uid"]);
 $results = $query->find();
 echo 'Number of records found now = ' . count($results) . '<br>';
 foreach($results as $result) {
@@ -40,9 +40,5 @@ switch (true) {
         echo '<br><br> Error! greater than 1 record.';
         break;
 }
-
-
-
-echo 'Stuff';
 
 ?>
