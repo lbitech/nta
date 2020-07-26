@@ -17,7 +17,6 @@
                     <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/><?php echo $_GET["comment_data"]; ?></textarea><br><br>
                     <input type="hidden" name="cid" value="1">
                     <input type="hidden" name="aid" value="1">
-                    <input type="hidden" name="uid" value="7452957">
                 </div>
                         <br><br>
             <button type="submit" class="pure-button pure-button-primary">Save</button>
