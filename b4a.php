@@ -36,6 +36,24 @@ echo 'Content = ' . $result->get("con") . '<br>';
 switch (true) {
     case count($results) <= 0:
         echo '<br><br> New record required.';
+
+        $myCustomObject = new ParseObject("Activity");
+
+        $myCustomObject->set("cid", "1");
+        $myCustomObject->set("aid", "1");
+        $myCustomObject->set("uid", $USER->id);
+        $myCustomObject->set("aid", $_GET["comment_data"]);
+
+        try {
+        $myCustomObject->save();
+        echo 'New object created with objectId: ' . $myCustomObject->getObjectId();
+        } catch (ParseException $ex) {
+        // Execute any logic that should take place if the save fails.
+        // error is a ParseException object with an error code and message.
+        echo 'Failed to create new object, with error message: ' . $ex->getMessage();
+        }
+
+
         break;
 
     case count($results) == 1:
