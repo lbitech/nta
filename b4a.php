@@ -30,7 +30,7 @@ echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
 
 // Call recordUpdate
-recordUpdate()
+recordUpdate();
 }
         
 } else {  
