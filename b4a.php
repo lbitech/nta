@@ -43,7 +43,7 @@ switch (true) {
         $myCustomObject->set("cid", "1");
         $myCustomObject->set("aid", "1");
         $myCustomObject->set("uid", $USER->id);
-        $myCustomObject->set("aid", $_GET["comment_data"]);
+        $myCustomObject->set("con", $_GET["comment_data"]);
 
         try {
         $myCustomObject->save();
