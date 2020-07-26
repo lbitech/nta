@@ -15,6 +15,7 @@ ParseClient::setServerURL('https://parseapi.back4app.com', '/');
 
 use Parse\ParseQuery;
 use Parse\ParseException;
+use Parse\ParseObject;
 
 if (!empty($_GET["cid"])) {
 $query = new ParseQuery("Activity");
