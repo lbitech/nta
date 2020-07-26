@@ -28,12 +28,17 @@ echo 'Number of records found now = ' . count($results) . '<br>';
 foreach($results as $result) {
 echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
+
+// Call recordUpdate
+recordUpdate()
 }
         
 } else {  
     echo "No, CID not set.";
 }
 
+
+recordUpdate(){
 switch (true) {
     case count($results) == 0:
         echo '<br><br> New record required.';
@@ -81,6 +86,7 @@ switch (true) {
     case count($results) > 1:
         echo '<br><br> Error! greater than 1 record.';
         break;
+}
 }
 
 ?>
