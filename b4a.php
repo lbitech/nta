@@ -1,4 +1,8 @@
 <?php
+
+require "/opt/bitnami/apps/moodle/htdocs/config.php";
+require_login();
+
 $autoload = $_SERVER["PHP_SELF"] . '/parse-php-sdk/autoload.php';
 
 require 'parse-php-sdk/autoload.php';
@@ -16,7 +20,8 @@ if (!empty($_GET["cid"])) {
 $query = new ParseQuery("Activity");
 $query->equalTo("cid", $_GET["cid"]);
 $query->equalTo("aid", $_GET["aid"]);
-$query->equalTo("uid", $_GET["uid"]);
+//$query->equalTo("uid", $_GET["uid"]);
+$query->equalTo("uid", $USER->id);
 $results = $query->find();
 echo 'Number of records found now = ' . count($results) . '<br>';
 foreach($results as $result) {
