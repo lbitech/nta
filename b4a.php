@@ -35,7 +35,7 @@ echo 'Content = ' . $result->get("con") . '<br>';
 }
 
 switch (true) {
-    case count($results) <= 0:
+    case count($results) == 0:
         echo '<br><br> New record required.';
 
         $myCustomObject = new ParseObject("Activity");
