@@ -66,7 +66,7 @@ switch (true) {
 
         break;
 
-    case count($results) == 1:
+    case $reccount == 1:
         echo '<br><br> Record exists.';
 
         $targetObj = $results[0]->getObjectId();
