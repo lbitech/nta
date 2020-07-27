@@ -5,7 +5,7 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-    <iframe name="content" src="b4a.php">
+    <iframe name="content" style="display:none;" src="b4a.php">
     </iframe>
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" target="content">
@@ -15,8 +15,8 @@
                 <div class="pure-u-1 pure-u-md-1-3">
                     <label for="multi-first-name">This is an example question</label><br>
                     <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/><?php echo $_GET["comment_data"]; ?></textarea><br><br>
-                    <input type="text" name="cid" id="cid" value="1">
-                    <input type="text" name="aid" id="aid" value="1">
+                    <input type="hidden" name="cid" value="1">
+                    <input type="hidden" name="aid" value="1">
                 </div>
                         <br><br>
             <button type="submit" class="pure-button pure-button-primary">Save</button>
