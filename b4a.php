@@ -42,7 +42,7 @@ function recordUpdate($reccount) {
 
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
-switch (true) {
+switch(true) {
 
         case $reccount == 0:
         echo '<br><br> New record required.';
@@ -91,6 +91,8 @@ switch (true) {
 
         break;
     
+}
+
 }
 
 ?>
