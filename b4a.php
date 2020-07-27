@@ -42,7 +42,7 @@ recordUpdate(1);
 function recordUpdate(int $reccount) {
 
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
-
+/*
 switch(true) {
 
         case $reccount == 0:
@@ -93,7 +93,7 @@ switch(true) {
         break;
     
 }
-
+*/
 }
 
 ?>
