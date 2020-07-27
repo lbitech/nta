@@ -41,7 +41,7 @@ recordUpdate();
 
 function recordUpdate() {
 
-    echo '<br><br> Test value = ' . count($results) . '<br><br>s';
+    echo '<br><br> Test value = ' . count($results) . '<br><br>';
 
 switch (true) {
     case count($results) == 0:
