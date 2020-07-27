@@ -62,8 +62,7 @@ if ($reccount == 0) {
         echo 'Failed to create new object, with error message: ' . $ex->getMessage();
         }
 
-    }
-    elseif ($reccount == 1) {    
+    } elseif ($reccount == 1) {    
     
         echo '<br><br> Record exists.';
 
@@ -83,10 +82,7 @@ if ($reccount == 0) {
         echo 'Get rec fail <br><b>';
         }
 
-    }
-
-    elseif ($reccount > 1) {    
-    
+    } elseif ($reccount > 1) {    
         echo '<br><br> Error! greater than 1 record.';
     }
     
