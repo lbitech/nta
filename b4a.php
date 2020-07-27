@@ -65,7 +65,7 @@ switch(true) {
         }
 
         break;
-    /*
+    
         case $reccount == 1:
         echo '<br><br> Record exists.';
 
@@ -86,7 +86,7 @@ switch(true) {
         }
 
         break;
-        
+     /*   
         case $reccount > 1:
         echo '<br><br> Error! greater than 1 record.';
 
