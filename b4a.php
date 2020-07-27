@@ -90,7 +90,7 @@ if ($reccount == 0) {
     
         echo '<br><br> Error! greater than 1 record.';
     }
-}
+    
 }
 
 ?>
