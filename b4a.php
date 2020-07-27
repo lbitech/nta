@@ -42,7 +42,7 @@ recordUpdate(1);
 function recordUpdate(int $reccount) {
 
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
-/*
+
 switch(true) {
 
         case $reccount == 0:
@@ -65,7 +65,7 @@ switch(true) {
         }
 
         break;
-    
+    /*
         case $reccount == 1:
         echo '<br><br> Record exists.';
 
@@ -91,9 +91,9 @@ switch(true) {
         echo '<br><br> Error! greater than 1 record.';
 
         break;
-    
+    */
 }
-*/
+
 }
 
 ?>
