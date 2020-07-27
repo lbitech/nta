@@ -40,6 +40,9 @@ recordUpdate();
 
 
 function recordUpdate() {
+
+    echo '<br><br> Test value = ' . count($results) . '<br><br>s';
+
 switch (true) {
     case count($results) == 0:
         echo '<br><br> New record required.';
