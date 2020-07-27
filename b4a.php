@@ -28,10 +28,9 @@ echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER-
 foreach($results as $result) {
 echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
-$rcount = ount($results);
+$rcount = count($results);
 // Call recordUpdate
 recordUpdate($rcount);
-
 }
         
 } else {  
