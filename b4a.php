@@ -17,7 +17,7 @@ use Parse\ParseQuery;
 use Parse\ParseException;
 use Parse\ParseObject;
 
-if (!empty($_GET["cid"])) {
+if (!empty($USER->id)) {
 $query = new ParseQuery("Activity");
 $query->equalTo("cid", $_GET["cid"]);
 $query->equalTo("aid", $_GET["aid"]);
