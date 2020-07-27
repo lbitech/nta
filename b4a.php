@@ -86,12 +86,12 @@ switch(true) {
         }
 
         break;
-     /*   
-        case $reccount > 1:
+        
+        case $reccount >= 2:
         echo '<br><br> Error! greater than 1 record.';
 
         break;
-    */
+    
 }
 
 }
