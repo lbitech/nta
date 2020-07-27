@@ -24,13 +24,14 @@ $query->equalTo("aid", $_GET["aid"]);
 //$query->equalTo("uid", $_GET["uid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
-echo 'Number of records found now = ' . count($results) . '<br>';
+echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
 foreach($results as $result) {
 echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
 
 // Call recordUpdate
 recordUpdate();
+
 }
         
 } else {  
