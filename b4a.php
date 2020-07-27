@@ -42,8 +42,9 @@ function recordUpdate($reccount) {
 
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
-if ($reccount == 0) {
+switch (true) {
 
+        case $reccount == 0:
         echo '<br><br> New record required.';
 
         $myCustomObject = new ParseObject("Activity");
@@ -62,8 +63,9 @@ if ($reccount == 0) {
         echo 'Failed to create new object, with error message: ' . $ex->getMessage();
         }
 
-    } elseif ($reccount == 1) {    
+        break;
     
+        case $reccount == 1:
         echo '<br><br> Record exists.';
 
         $targetObj = $results[0]->getObjectId();
@@ -82,9 +84,12 @@ if ($reccount == 0) {
         echo 'Get rec fail <br><b>';
         }
 
-    } elseif ($reccount > 1) {    
+        break;
+        
+        case $reccount > 1:
         echo '<br><br> Error! greater than 1 record.';
-    }
+
+        break;
     
 }
 
