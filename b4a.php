@@ -30,7 +30,7 @@ echo 'Object found ' . $result->getObjectId() . '<br>';
 echo 'Content = ' . $result->get("con") . '<br>';
 
 // Call recordUpdate
-recordUpdate();
+recordUpdate(count($results));
 
 }
         
@@ -39,9 +39,9 @@ recordUpdate();
 }
 
 
-function recordUpdate() {
+function recordUpdate($reccount) {
 
-    echo '<br><br> Test value = ' . count($results) . '<br><br>';
+    echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
 switch (true) {
     case count($results) == 0:
