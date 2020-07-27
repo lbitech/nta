@@ -44,7 +44,7 @@ function recordUpdate($reccount) {
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
 switch (true) {
-    case count($results) == 0:
+    case $reccount == 0:
         echo '<br><br> New record required.';
 
         $myCustomObject = new ParseObject("Activity");
