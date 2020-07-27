@@ -31,7 +31,7 @@ echo 'Content = ' . $result->get("con") . '<br>';
 $rcount = count($results);
 // Call recordUpdate
 //recordUpdate($rcount);
-recordUpdate(1);
+recordUpdate(1, $result->getObjectId());
 }
         
 } else {  
@@ -39,7 +39,7 @@ recordUpdate(1);
 }
 
 
-function recordUpdate(int $reccount) {
+function recordUpdate(int $reccount, $targetRec = 'null') {
 
     echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
@@ -69,12 +69,12 @@ switch (true) {
         case $reccount == 1:
         echo '<br><br> Record exists.';
 
-        $targetObj = $results[0]->getObjectId();
-        echo '<br><br> Target objectId = ' . $targetObj . '<br><br>';
+        //$targetObj = $results[0]->getObjectId();
+        echo '<br><br> Target objectId = ' . $targetRec . '<br><br>';
 
         $query = new ParseQuery("Activity");
         try {
-        $activityCon = $query->get($targetObj);
+        $activityCon = $query->get($targetRec);
         // The object was retrieved successfully.
         echo 'Get rec success <br><b>';
         $activityCon->set("con", $_GET["comment_data"]);
