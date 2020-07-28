@@ -22,7 +22,7 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
-    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 20px;">
+    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="1" style="padding-left: 20px;">
     </iframe>
 </body>
 <footer>
