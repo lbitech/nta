@@ -89,6 +89,7 @@ switch (true) {
         echo '<div class="fade-out">';
         echo  '<img src="saved.png">';
         echo  '</div>';
+        $_SESSION['saveFlag'] = 'on';
 
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.

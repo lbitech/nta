@@ -23,6 +23,14 @@
         </fieldset>
     </form>
 
+<?php if($_SESSION['saveFlag'] == 'on'){
+            echo '<div class="fade-out">';
+            echo  '<img src="saved.png">';
+            echo  '</div>';
+            $_SESSION['saveFlag'] = 'off';
+} ?>
+
+
 </body>
 <footer>
 </footer>
