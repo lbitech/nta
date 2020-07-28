@@ -8,7 +8,7 @@
 
     
     
-    <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" target="content">
+    <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 10px;" target="content">
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 </legend><br><br><br>
             <div class="pure-g" style="padding-bottom: 10px;">
