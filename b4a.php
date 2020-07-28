@@ -79,6 +79,11 @@ switch (true) {
         echo 'Get rec success <br><b>';
         $activityCon->set("con", $_GET["comment_data"]);
         $activityCon->save();
+
+        echo '<div class="fade-out">';
+        echo  '<img src="saved.png">';
+        echo  '</div>';
+
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
         // error is a ParseException with an error code and message.

@@ -5,7 +5,7 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-    <iframe name="content" style="display:none;" src="b4a.php">
+    <iframe name="content" src="b4a.php">
     </iframe>
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" target="content">
@@ -22,11 +22,6 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
-    <?php if (!isset($_SESSION['save'])){
-        echo '<div class="fade-out">';
-        echo  '<img src="saved.png">';
-        echo  '</div>';
-    } ?>
 
 </body>
 <footer>
