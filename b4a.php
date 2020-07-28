@@ -30,10 +30,10 @@ $query->equalTo("aid", $_GET["aid"]);
 //$query->equalTo("uid", $_GET["uid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
-echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
+//echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
 foreach($results as $result) {
-echo 'Object found ' . $result->getObjectId() . '<br>';
-echo 'Content = ' . $result->get("con") . '<br>';
+//echo 'Object found ' . $result->getObjectId() . '<br>';
+//echo 'Content = ' . $result->get("con") . '<br>';
 $rcount = count($results);
 // Call recordUpdate
 recordUpdate($rcount, $result->getObjectId());
@@ -47,12 +47,12 @@ recordUpdate($rcount, $result->getObjectId());
 
 function recordUpdate(int $reccount, $targetRec = 'null') {
 
-    echo '<br><br> Test value = ' . $reccount . '<br><br>';
+    //echo '<br><br> Test value = ' . $reccount . '<br><br>';
 
 switch (true) {
 
         case $reccount == 0:
-        echo '<br><br> New record required.';
+        //echo '<br><br> New record required.';
 
         $myCustomObject = new ParseObject("Activity");
 
@@ -64,6 +64,9 @@ switch (true) {
         try {
         $myCustomObject->save();
         echo 'New object created with objectId: ' . $myCustomObject->getObjectId();
+        echo '<div class="fade-out">';
+        echo  '<img src="saved.png">';
+        echo  '</div>';
         } catch (ParseException $ex) {
         // Execute any logic that should take place if the save fails.
         // error is a ParseException object with an error code and message.
@@ -73,23 +76,22 @@ switch (true) {
         break;
     
         case $reccount == 1:
-        echo '<br><br> Record exists.';
+        //echo '<br><br> Record exists.';
 
         //$targetObj = $results[0]->getObjectId();
-        echo '<br><br> Target objectId = ' . $targetRec . '<br><br>';
+        //echo '<br><br> Target objectId = ' . $targetRec . '<br><br>';
 
         $query = new ParseQuery("Activity");
         try {
         $activityCon = $query->get($targetRec);
         // The object was retrieved successfully.
-        echo 'Get rec success <br><b>';
+       // echo 'Get rec success <br><b>';
         $activityCon->set("con", $_GET["comment_data"]);
         $activityCon->save();
 
         echo '<div class="fade-out">';
         echo  '<img src="saved.png">';
         echo  '</div>';
-        $_SESSION['saveFlag'] = 'on';
 
         } catch (ParseException $ex) {
         // The object was not retrieved successfully.
@@ -98,12 +100,12 @@ switch (true) {
         }
 
         break;
-    /*    
+       
         case $reccount >= 2:
         echo '<br><br> Error! greater than 1 record.';
 
         break;
-    */
+    
 }
 
 }
