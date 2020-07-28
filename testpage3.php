@@ -5,6 +5,7 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
+    <br><br>
     <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0">
     </iframe>
     
@@ -22,16 +23,6 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
-
-<?php if ($_SESSION['saveFlag'] == 'on'){
-            echo '<div class="fade-out">';
-            echo  '<img src="saved.png">';
-            echo  '</div>';
-            $_SESSION['saveFlag'] = 'off';
-} else { echo '<br><br> Session var = ' . $_SESSION['saveFlag'] . ' <br><br>';}
-
-?>
-
 
 </body>
 <footer>
