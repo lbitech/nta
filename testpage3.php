@@ -5,9 +5,8 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-    <br><br>
-    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0">
-    </iframe>
+
+    
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 60px;" target="content">
         <fieldset>
@@ -23,7 +22,8 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
-
+    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 20px;">
+    </iframe>
 </body>
 <footer>
 </footer>
