@@ -1,6 +1,6 @@
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-
+<link rel="stylesheet" type="text/css" href="fade.css" >
 </head>
 <body>
 
@@ -22,6 +22,11 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
+    <?php if (isset($_SESSION['save'])){
+        echo '<div class="fade-out">';
+        echo  '<img src="saved.png">';
+        echo  '</div>';
+    } ?>
 
 </body>
 <footer>
