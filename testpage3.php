@@ -22,7 +22,7 @@
             <button type="submit" class="pure-button pure-button-primary">Save</button>
         </fieldset>
     </form>
-    <?php if (isset($_SESSION['save'])){
+    <?php if (!isset($_SESSION['save'])){
         echo '<div class="fade-out">';
         echo  '<img src="saved.png">';
         echo  '</div>';
