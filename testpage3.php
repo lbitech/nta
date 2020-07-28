@@ -28,7 +28,7 @@
             echo  '<img src="saved.png">';
             echo  '</div>';
             $_SESSION['saveFlag'] = 'off';
-} else { echo '<br><br> Session var not set <br><br>';}
+} else { echo '<br><br> Session var = ' . $_SESSION['saveFlag'] . ' <br><br>';}
 
 ?>
 
