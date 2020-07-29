@@ -8,7 +8,7 @@
 
     
     
-    <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px; padding-bottom: 10px;" target="content">
+    <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px;" target="content">
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 </legend><br><br><br>
             <div class="pure-g" style="padding-bottom: 10px;">
@@ -24,7 +24,7 @@
             <button type="button" class="pure-button pure-button-primary" onclick="window.open('', '_self', ''); window.close();">Exit</button>
         </fieldset>
     </form>
-    
+    <button type="button" class="pure-button pure-button-primary" onclick="window.open('', '_self', ''); window.close();" style="padding-left: 20px; padding-bottom: 10px;">Exit</button>
     <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
     </iframe>
 </body>
