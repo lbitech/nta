@@ -3,7 +3,6 @@
 <link rel="stylesheet" type="text/css" href="fade.css" >
 </head>
 <body>
-   <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px;" target="content">
@@ -25,7 +24,7 @@
             
        </fieldset>
     </form>
-    <!-- <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;"> -->
+    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
     </iframe>
 </body>
 <footer>
