@@ -33,7 +33,7 @@ echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER-
 foreach($results as $result) {
 
 $rcount = count($results);
-echo 'Rcount = ' . $rcount . '.<br><br>ß';
+echo 'Rcount = ' . $rcount . '.<br><br>';
 
 }
 
