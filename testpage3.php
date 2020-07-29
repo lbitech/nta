@@ -19,7 +19,7 @@
             <br><br>
             <button type="submit" class="pure-button pure-button-primary" style="padding-right: 20px;">Save</button>
             <div class="pure-g" style="padding-bottom: 10px;">
-                <div class="pure-u-1 pure-u-md-1-3">
+                <div class="pure-u-1 pure-u-md-2-3">
             <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;" onclick="window.open('', '_self', ''); window.close();">Exit</button>
            </div>
        </fieldset>
