@@ -20,9 +20,9 @@
                 </div>
             <br><br>
             <button type="submit" class="pure-button pure-button-primary" style="padding-right: 20px;">Save</button>
-            <div class="pure-g" style="padding-top: 10px;">
+            <br><br>
             <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;" onclick="window.open('', '_self', ''); window.close();">Exit</button>
-            </div>
+          
        </fieldset>
     </form>
     <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
