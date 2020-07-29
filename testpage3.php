@@ -30,9 +30,10 @@ $query->equalTo("aid", $_GET["aid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
 //echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
-foreach($results as $display) {
-echo $display->get("con"); 
-}
+for ($i = 0; $i < count($results); $i++) {
+    $object = $results[$i];
+    echo $object->get('con');
+  }
 }
         
 } else {  
