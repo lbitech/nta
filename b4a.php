@@ -34,6 +34,7 @@ $results = $query->find();
 foreach($results as $result) {
 //echo 'Object found ' . $result->getObjectId() . '<br>';
 //echo 'Content = ' . $result->get("con") . '<br>';
+
 $rcount = count($results);
 // Call recordUpdate
 recordUpdate($rcount, $result->getObjectId());
