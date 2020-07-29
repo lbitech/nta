@@ -34,7 +34,7 @@ foreach($results as $result) {
 
 $rcount = count($results);
 echo 'Rcount = ' . $rcount . '.<br><br>';
-echo 'con= ' . $result->get('con') . '<br>';
+echo 'con= ' . $result->get("con") . '<br>';
 
 }
 
