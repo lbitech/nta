@@ -29,7 +29,9 @@ $query->equalTo("cid", $_GET["cid"]);
 $query->equalTo("aid", $_GET["aid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
-echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
+//echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
+$display = $results[0];
+/*
 foreach($results as $result) {
 
 $rcount = count($results);
@@ -37,7 +39,7 @@ echo 'Rcount = ' . $rcount . '.<br><br>';
 echo 'con= ' . $result->get("con") . '<br>';
 
 }
-
+*/
 ?>
 
 
@@ -50,7 +52,7 @@ echo 'con= ' . $result->get("con") . '<br>';
             <div class="pure-g" style="padding-bottom: 10px;">
                 <div class="pure-u-1 pure-u-md-1-3">
                     <label for="multi-first-name">This is an example question</label><br>
-                    <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/><?php echo $result->get("con"); ?></textarea><br><br> 
+                    <textarea rows="5" cols="80" name="comment_data" id="multi-first-name" class="pure-u-23-24"/><?php echo $display->get("con"); ?></textarea><br><br> 
                     <input type="hidden" name="cid" value="1">
                     <input type="hidden" name="aid" value="1">
                 </div>
