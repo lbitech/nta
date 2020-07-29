@@ -30,7 +30,8 @@ $query->equalTo("aid", $_GET["aid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
 //echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
-
+$display = $results[0];
+echo $display->get("con"); 
 }
         
 } else {  
