@@ -5,7 +5,7 @@
 <body>
 
 <?php
-/*
+
 require "/opt/bitnami/apps/moodle/htdocs/config.php";
 require_login();
 
@@ -22,7 +22,7 @@ ParseClient::setServerURL('https://parseapi.back4app.com', '/');
 use Parse\ParseQuery;
 use Parse\ParseException;
 use Parse\ParseObject;
-*/
+
 if (!empty($USER->id)) {
 $query = new ParseQuery("Activity");
 $query->equalTo("cid", $_GET["cid"]);

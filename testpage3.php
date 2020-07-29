@@ -3,38 +3,7 @@
 <link rel="stylesheet" type="text/css" href="fade.css" >
 </head>
 <body>
-<?php
-
-require "/opt/bitnami/apps/moodle/htdocs/config.php";
-require_login();
-
-$autoload = $_SERVER["PHP_SELF"] . '/parse-php-sdk/autoload.php';
-
-require 'parse-php-sdk/autoload.php';
-
-use Parse\ParseClient;
-
-// Initializes with the <APPLICATION_ID>, <REST_KEY>, and <MASTER_KEY>
-ParseClient::initialize( "6gUY2ACd17tsiDroxH6tmRTOx9P4S99LODf9P4lB", "qtLatc5USQoeYas8CUADRoUoJLWws0CP6a5inzmp", "nuKqVaJXBSsYJEg5p79KCY09pu2sU1pYzSvEEH8l" );
-ParseClient::setServerURL('https://parseapi.back4app.com', '/');
-
-use Parse\ParseQuery;
-use Parse\ParseException;
-use Parse\ParseObject;
-
-if (!empty($USER->id)) {
-$query = new ParseQuery("Activity");
-$query->equalTo("cid", $_GET["cid"]);
-$query->equalTo("aid", $_GET["aid"]);
-//$query->equalTo("uid", $_GET["uid"]);
-$query->equalTo("uid", $USER->id);
-$results = $query->find();
-//echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';//for ($i = 0; $i < count($results); $i++) {
-//    $object = $results[$i];
-//    echo $object->get('con');
-//  }
-
-?>
+   <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px;" target="content">
@@ -56,7 +25,7 @@ $results = $query->find();
             
        </fieldset>
     </form>
-    <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
+    <!-- <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;"> -->
     </iframe>
 </body>
 <footer>
