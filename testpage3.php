@@ -9,6 +9,7 @@
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px;" target="content">
         <fieldset>
             <legend> Learning Mentor Level 3 - Activity 1 </legend><br><br><br>
+            <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;" onclick="window.open('', '_self', ''); window.close();">Exit</button>
             <div class="pure-g" style="padding-bottom: 10px;">
                 <div class="pure-u-1 pure-u-md-1-3">
                     <label for="multi-first-name">This is an example question</label><br>
@@ -18,10 +19,9 @@
                 </div>
             <br><br>
             <button type="submit" class="pure-button pure-button-primary" style="padding-right: 20px;">Save</button>
-            <div class="pure-g" style="padding-bottom: 10px;">
-                <div class="pure-u-1 pure-u-md-2-3">
-            <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;" onclick="window.open('', '_self', ''); window.close();">Exit</button>
-           </div>
+           
+            
+            
        </fieldset>
     </form>
     <iframe name="content" src="b4a.php" border:0 scrolling="no" frameBorder="0" style="padding-left: 15px;">
