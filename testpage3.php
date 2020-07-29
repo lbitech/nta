@@ -19,7 +19,7 @@
                     <input type="hidden" name="aid" value="1">
                 </div>
                         <br><br>
-            <button type="submit" class="pure-button pure-button-primary">Save</button>
+            <button type="submit" class="pure-button pure-button-primary">Save</button><br><br>
             <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;"
             onclick="window.open('', '_self', ''); window.close();">Exit</button>
         </fieldset>
