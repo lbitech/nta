@@ -29,11 +29,10 @@ $query->equalTo("aid", $_GET["aid"]);
 //$query->equalTo("uid", $_GET["uid"]);
 $query->equalTo("uid", $USER->id);
 $results = $query->find();
-//echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
-for ($i = 0; $i < count($results); $i++) {
-    $object = $results[$i];
-    echo $object->get('con');
-  }
+//echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';//for ($i = 0; $i < count($results); $i++) {
+//    $object = $results[$i];
+//    echo $object->get('con');
+//  }
 }
 ?>
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
