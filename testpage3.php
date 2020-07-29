@@ -35,10 +35,6 @@ for ($i = 0; $i < count($results); $i++) {
     echo $object->get('con');
   }
 }
-        
-} else {  
-    echo "No, CID not set.";
-}
 ?>
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
     
