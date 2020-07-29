@@ -33,7 +33,7 @@ $results = $query->find();
 //    $object = $results[$i];
 //    echo $object->get('con');
 //  }
-}
+
 ?>
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
     
