@@ -24,6 +24,18 @@ use Parse\ParseQuery;
 use Parse\ParseException;
 use Parse\ParseObject;
 
+$query = new ParseQuery("Activity");
+$query->equalTo("cid", $_GET["cid"]);
+$query->equalTo("aid", $_GET["aid"]);
+$query->equalTo("uid", $USER->id);
+$results = $query->find();
+echo 'Number of records found now = ' . count($results) . ' for UID = ' . $USER->id  . '<br>';
+foreach($results as $result) {
+
+$rcount = count($results);
+echo 'Rcount = ' . $rcount . '.<br><br>ß';
+
+}
 
 ?>
 
