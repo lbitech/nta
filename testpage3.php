@@ -5,7 +5,8 @@
 <body>
 
     <img src="clear-nta-logo.png" alt="Northern Training Academy" width="130" height="86" style="padding-left: 20px; padding-top: 20px; padding-bottom: 60px;">
-
+    <button type="button" class="pure-button pure-button-primary" style="padding-left: 20px;" onclick="window.open('', '_self', ''); window.close();">Exit</button>
+          
     
     
     <form action="b4a.php" method="GET" class="pure-form pure-form-stacked" style="padding-left: 20px;" target="content">
